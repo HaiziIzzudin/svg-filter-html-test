@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="align-btm">
+    <button>START</button>
+    <button>CHAPTERS</button>
+    <button>SETTINGS</button>
+    <button>CREDITS</button>
+  </div>
+
+  <svg>
+    <defs>
+      <filter id="shake0">
+        <feTurbulence id="turbulence" baseFrequency='0.01' numOctaves="3" seed="0"  />
+        <feDisplacementMap id="displacement" in="SourceGraphic" in2='noise' scale="2.5" />
+      </filter>
+      <filter id="shake1">
+        <feTurbulence id="turbulence" baseFrequency='0.01' numOctaves="3" seed="1"  />
+        <feDisplacementMap id="displacement" in="SourceGraphic" in2='noise' scale="2.5" />
+      </filter>
+      <filter id="shake2">
+        <feTurbulence id="turbulence" baseFrequency='0.01' numOctaves="3" seed="2"  />
+        <feDisplacementMap id="displacement" in="SourceGraphic" in2='noise' scale="2.5" />
+      </filter>
+      <filter id="shake3">
+        <feTurbulence id="turbulence" baseFrequency='0.01' numOctaves="3" seed="3"  />
+        <feDisplacementMap id="displacement" in="SourceGraphic" in2='noise' scale="2.5" />
+      </filter>
+      <filter id="shake4">
+        <feTurbulence id="turbulence" baseFrequency='0.01' numOctaves="3" seed="4"  />
+        <feDisplacementMap id="displacement" in="SourceGraphic" in2='noise' scale="2.5" />
+      </filter>
+    </defs>
+  </svg>
+</body>
+</html>

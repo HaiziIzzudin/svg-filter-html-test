@@ -1,0 +1,42 @@
+body {
+  background-image: url(https://global-uploads.webflow.com/5f58a077d654db1a689fd95b/5f886bcf117a0c2315ea7679_picfair-08418164-a-rainy-night-in-manchester-fu-PREVIEW-ONLY.jpg);
+  background: fill;
+}
+
+button {
+  padding: 10px 20px;
+  margin: 10px;
+
+  border-radius: 0px;
+  color: white;
+  background-color: #000;
+  border: none;
+  cursor: pointer;
+  font-size: 40px;
+  font-family:'Patrick Hand SC';
+  
+  transition: .1s;
+}
+
+.align-btm {
+  position: fixed;
+  bottom: 50px;
+  left: 50px;
+}
+
+
+button:hover {
+  transform: scale(1.5);
+  animation: distort 0.75s linear infinite;
+  background-color: #fff;
+  color: black;
+
+}
+
+@keyframes distort {
+  0% { filter: url('#shake0'); }
+  25% { filter: url('#shake1'); }
+  50% { filter: url('#shake2'); }
+  75% { filter: url('#shake3'); }
+  100% { filter: url('#shake4'); }
+}
